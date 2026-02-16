@@ -1,0 +1,52 @@
+
+================================================================================
+NSL-KDD INTRUSION DETECTION SYSTEM - PERFORMANCE REPORT
+================================================================================
+
+📊 OVERALL METRICS:
+   • Test Accuracy:          97.95%
+   • Test Precision:         0.9859
+   • Test Recall:            0.9795
+   • Test F1-Score:          0.9816
+   • Matthews Corr Coef:     0.9651
+   • Cohen's Kappa:          0.9647
+
+🎯 DETECTION RATES BY ATTACK TYPE:
+   • dos       :  99.87% detection rate
+   • normal    :  96.62% detection rate
+   • probe     :  98.28% detection rate
+   • r2l       :  98.66% detection rate
+   • u2r       :  37.50% detection rate
+
+⏱️  EFFICIENCY METRICS:
+   • Training Time:          3.32 minutes
+   • Total Test Time:        0.4717 seconds
+   • Inference Time/Sample:  0.0250 ms
+   • Throughput:             40062 samples/second
+
+🏗️  MODEL ARCHITECTURE:
+   • Model Type:             CNN-BiLSTM-Attention
+   • Input Features:         41
+   • Hidden Dimension:       64
+   • LSTM Layers:            2
+   • Total Parameters:       255,750
+   • Trainable Parameters:   255,750
+
+📈 TRAINING CONFIGURATION:
+   • Dataset:                NSL-KDD
+   • Training Samples:       88,181
+   • Validation Samples:     18,896
+   • Test Samples:           18,896
+   • Batch Size:             256
+   • Learning Rate:          0.0005
+   • Dropout Rate:           0.4
+   • Epochs Trained:         44
+   • Best Val Accuracy:      97.86%
+
+🆚 COMPARISON WITH BASE PAPER:
+   • Base Paper Accuracy:    96.8%
+   • Our Model Accuracy:     97.95%
+   • Improvement:            +1.15%
+   • Novel Metrics Added:    Precision, Recall, F1-Score
+
+================================================================================

@@ -1,0 +1,43 @@
+{
+    "dataset": "NSL-KDD",
+    "model_architecture": "CNN-BiLSTM-Attention",
+    "test_metrics": {
+        "accuracy": 0.9795194750211685,
+        "precision": 0.9858844065193926,
+        "recall": 0.9795194750211685,
+        "f1_score": 0.9816298250076735,
+        "mcc": 0.9651158161938465,
+        "kappa": 0.9647118058816166
+    },
+    "detection_rates": {
+        "dos": 99.86935694585571,
+        "normal": 96.62443080578103,
+        "probe": 98.2837528604119,
+        "r2l": 98.65771812080537,
+        "u2r": 37.5
+    },
+    "timing": {
+        "training_time_minutes": 3.3196009000142417,
+        "inference_time_ms": 0.02496106002817307,
+        "throughput_samples_per_sec": 40062.40115088538
+    },
+    "model_config": {
+        "input_dim": 41,
+        "hidden_dim": 64,
+        "num_classes": 5,
+        "lstm_layers": 2,
+        "dropout": 0.4,
+        "total_params": 255750
+    },
+    "training_config": {
+        "batch_size": 256,
+        "learning_rate": 0.0005,
+        "epochs_trained": 44,
+        "best_val_accuracy": 0.9785668924640135
+    },
+    "comparison_with_base_paper": {
+        "base_paper_accuracy": 96.8,
+        "our_accuracy": 97.95194750211685,
+        "improvement": 1.1519475021168546
+    }
+}
